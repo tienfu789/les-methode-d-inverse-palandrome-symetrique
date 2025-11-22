@@ -30,7 +30,7 @@ w = input()
 print(is_palindrome(w))
 
 #----------------------------------------------------------------------------------------------------
-#inverser une chaine(boucle pour)
+#inverser une chaine(boucle pour pas="-1")
 def inverser_chaine(ch):
     resultat = ""
     for i in range(len(ch)-1, -1, -1):
@@ -48,7 +48,7 @@ def inverse(ch):
         ch0 = ch[i] + ch0
     return ch0
 #---------------------------------------------------------------------------
-#seullment pour de entier
+#seullment pour les entiers
 def palindrome_nombre(x):
     original = x
     m = 0
@@ -62,6 +62,7 @@ def palindrome_nombre(x):
 print(palindrome_nombre(121))  # True
 print(palindrome_nombre(123))  # False
 #-----------------------------------------------------------------------------
+#seullement pour les entiers
 def inverser_nombre(x):
     nombre_inverse = 0
     while x > 0:
@@ -82,4 +83,5 @@ def inverser_nombre_texte(x):
         chx = ch[0] + chx          # chx ← ch[0] + chx (ajouter premier caractère au début)
         ch = ch[1:]                # Effacer(ch, 0, 1) - Supprimer premier caractère
     return (chx)                   # Retourner chx 
+
 
