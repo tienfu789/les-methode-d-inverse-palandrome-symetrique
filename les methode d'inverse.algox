@@ -1,0 +1,96 @@
+fonction palendrome(ch:chaîne de caractère) : booléen
+Début
+i <- 0
+n <- long(ch)
+p <- Vrai
+
+Tant que i < (n div 2) et p = Vrai faire
+    Si ch[i] <> ch[n - 1 - i] alors
+        p <- Faux
+    FinSi
+    i <- i + 1
+FinTantQue
+
+Retourner p
+Fin
+
+
+fonction palendrome(ch:chaîne de caractère) : booléen
+début
+    
+fin
+Début
+left <- 0
+right <- long(ch) - 1
+p <- Vrai
+
+Tant que left < right faire
+    Si ch[left] < ch[right] alors
+        p <- Faux
+    FinSi
+    left <- left + 1
+    right <- right - 1
+FinTantQue
+Retourner p
+Fin
+
+fonction inverse(ch:chaîne de caractère) : chaîne
+Début
+resultat <- ""
+Pour i de long(ch) - 1 à 0 pas -1 faire
+    resultat <- resultat + ch[i]
+FinPour
+
+Retourner resultat
+Fin
+
+fonction inverse(ch:chaîne de caractère) : chaîne
+Début
+ch0 <- ""
+Pour i <- 0 à long(ch) - 1 faire
+    ch0 <- ch[i] + ch0
+FinPour
+
+Retourner ch0
+Fin
+
+Début
+original <- x
+m <- 0
+fonction inverse(x:entier) :entier
+Début
+Tant que x > 0 faire
+    s <- x mod 10        // reste de la division par 10
+    m <- m * 10 + s      // construire le nombre inversé
+    x <- x div 10        // enlever le dernier chiffre
+FinTantQue
+
+Retourner (m) 
+Fin
+
+fonction inverse(x:entier) :entier
+Début
+nombre_inverse <-- 0
+
+Tant que x > 0 faire
+    chiffre <- x mod 10                      // obtenir le dernier chiffre
+    nombre_inverse <-- nombre_inverse * 10 + chiffre  // ajouter le chiffre à l'inverse
+    x <-- x div 10                            // supprimer le dernier chiffre
+FinTantQue
+
+Retourner nombre_inverse                      // retourner le nombre inversé
+fin
+
+
+fonction inversé(ch:chaîne):chaîne
+Début
+ch <- Convch(x)        // convertir le nombre en chaîne
+chx <- ""              // chaîne inversée vide
+
+Tant que ch  ≠ "" faire
+    chx <- ch[0] + chx             // ajouter le premier caractère au début
+    ch <- Effacer(ch, 0, 1)        // supprimer le premier caractère
+FinTantQue
+
+Retourner chx            // retourner la chaîne inversée
+Fin
