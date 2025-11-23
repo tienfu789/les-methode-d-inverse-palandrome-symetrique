@@ -6,7 +6,7 @@ def palindrome(ch):
     while i < n // 2 and p:
         if ch[i] != ch[n - 1 - i]:
             p= False
-        i += 1
+        i= i+ 1
     return p
 
 # Example usage
@@ -83,5 +83,6 @@ def inverser_nombre_texte(x):
         chx = ch[0] + chx          # chx ← ch[0] + chx (ajouter premier caractère au début)
         ch = ch[1:]                # Effacer(ch, 0, 1) - Supprimer premier caractère
     return (chx)                   # Retourner chx 
+
 
 
