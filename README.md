@@ -1,2 +1,4 @@
 # les-methode-d-inverse-palindrome-symetrique
-Ce fichier est dédié aux différentes méthodes pour inverser une chaine ou un nombre. Il présente des approches utilisant Python ainsi que des algorithmes selon la méthode tunisienne. L’objectif est de montrer comment manipuler des chaînes de caractères pour inverser des mots de manière simple et efficace.
+Ce fichier est dédié aux différentes méthodes pour inverser une chaine ou un nombre.
+Il présente des approches utilisant Python ainsi que des algorithmes selon la méthode tunisienne.
+L’objectif est de montrer comment manipuler des chaînes de caractères pour inverser des mots de manière simple et efficace.
