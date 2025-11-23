@@ -1,11 +1,11 @@
-fonction palendrome(ch:chaîne de caractère) : booléen
+fonction palendrome(ch:chaîne de caractère) : booléen                          #pour vérifier si une chaîne est symétrique
 Début
 i <- 0
 n <- long(ch)
 p <- Vrai
 
 Tant que i < (n div 2) et p = Vrai faire
-    Si ch[i] <> ch[n - 1 - i] alors
+    Si ch[i] ≠ ch[n - 1 - i] alors
         p <- Faux
     FinSi
     i <- i + 1
@@ -13,15 +13,12 @@ FinTantQue
 
 Retourner p
 Fin
+-----------------------------------------------------------------------------------------------------------------------
 
-
-fonction palendrome(ch:chaîne de caractère) : booléen
-début
-    
-fin
+fonction palendrome(ch:chaîne de caractère) : booléen                   #pour vérifier si une chaîne est symétrique
 Début
-left <- 0
-right <- long(ch) - 1
+left <-- 0
+right <-- long(ch) - 1
 p <- Vrai
 
 Tant que left < right faire
@@ -33,30 +30,31 @@ Tant que left < right faire
 FinTantQue
 Retourner p
 Fin
+--------------------------------------------------------------------------------------------------
 
-fonction inverse(ch:chaîne de caractère) : chaîne
+fonction inverse(ch:chaîne de caractère) : chaîne               #inverser une chaine de caractére
 Début
-resultat <- ""
+resultat <-- ""
 Pour i de long(ch) - 1 à 0 pas -1 faire
-    resultat <- resultat + ch[i]
+    resultat <-- resultat + ch[i]
 FinPour
-
 Retourner resultat
 Fin
-
-fonction inverse(ch:chaîne de caractère) : chaîne
+--------------------------------------------------------------------------------------------------
+fonction inverse(ch:chaîne de caractère) : chaîne                 #inverser une chaine de caractére     
 Début
-ch0 <- ""
-Pour i <- 0 à long(ch) - 1 faire
-    ch0 <- ch[i] + ch0
+ch0 <-- ""
+Pour i <-- 0 à long(ch) - 1 faire
+    ch0 <-- ch[i] + ch0
 FinPour
 
 Retourner ch0
 Fin
-
+---------------------------------------------------------------------
+fonction inverse(x:entier) : entier                              #inverser un nombre
 Début
-original <- x
-m <- 0
+original <-- x
+m <-- 0
 fonction inverse(x:entier) :entier
 Début
 Tant que x > 0 faire
@@ -67,25 +65,27 @@ FinTantQue
 
 Retourner (m) 
 Fin
-
+--------------------------------------------------------------------------
 fonction inverse(x:entier) :entier
 Début
 nombre_inverse <-- 0
 
 Tant que x > 0 faire
-    chiffre <- x mod 10                      // obtenir le dernier chiffre
-    nombre_inverse <-- nombre_inverse * 10 + chiffre  // ajouter le chiffre à l'inverse
-    x <-- x div 10                            // supprimer le dernier chiffre
+    chiffre <-- x mod 10                          // obtenir le dernier chiffre
+    nombre_inverse <-- nombre_inverse * 10 + chiffre      // ajouter le chiffre à l'inverse
+    x <-- x div 10                                // supprimer le dernier chiffre
 FinTantQue
 
 Retourner nombre_inverse                      // retourner le nombre inversé
 fin
 
 
+
+----------------------------------------------------------------------------------------
 fonction inversé(ch:chaîne):chaîne
 Début
-ch <- Convch(x)        // convertir le nombre en chaîne
-chx <- ""              // chaîne inversée vide
+ch <-- Convch(x)        // convertir le nombre en chaîne
+chx <-- ""              // chaîne inversée vide
 
 Tant que ch  ≠ "" faire
     chx <- ch[0] + chx             // ajouter le premier caractère au début
@@ -93,4 +93,5 @@ Tant que ch  ≠ "" faire
 FinTantQue
 
 Retourner chx            // retourner la chaîne inversée
+
 Fin
